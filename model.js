@@ -28,3 +28,18 @@ function Line (startX, startY, thickness, color, endX, endY){
     this.endX = endX;
     this.endY = endY;
 }
+
+function Circle (startX, startY, thickness, color, radius){
+    Shape.call(this, startX, startY, thickness, color);
+    this.radius = radius;
+}
+
+function Triangle (startX, startY, thickness, color, width, height){
+    Shape.call(this, startX, startY, thickness, color);
+    this.width = width;
+    this.height = height;
+}
+
+function Clear (startX, startY, thickness, color){
+    Shape.call(this, startX, startY, thickness, color);
+}
